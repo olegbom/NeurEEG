@@ -52,6 +52,8 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(13, 13);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(195, 127);
@@ -78,6 +80,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(215, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(196, 127);
