@@ -35,23 +35,29 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 276);
+            this.button1.Location = new System.Drawing.Point(13, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 103);
             this.button1.TabIndex = 0;
             this.button1.Text = "START";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button1_KeyPress);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(13, 13);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(195, 127);
@@ -74,10 +80,12 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(60, 20);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "500";
+            this.textBox1.Text = "10";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(215, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(196, 127);
@@ -100,7 +108,31 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(226, 20);
             this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "D:/wp";
+            this.textBox2.Text = "d:/wp";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(13, 276);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(208, 103);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "ChooseFileDirectory";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(13, 495);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(208, 60);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Exit";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -108,6 +140,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -136,6 +170,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
